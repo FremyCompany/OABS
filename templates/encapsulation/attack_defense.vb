@@ -73,7 +73,15 @@ new AttackDefense=
 
 	ProliferationByDefense=
 		new Reaction(
-			From=   [ some AttackDefense(DefenseState=Protected, AttackState=NotAttacked) ]
-			To=     [ 1 new[x](), 1 new[x](DefenseState=NotProtected) ]
-			Rate=   0.5
+			From=
+				[
+					some AttackDefense(DefenseState=Protected, AttackState=NotAttacked)
+				]
+			To=
+				[
+					1 new[x]()
+					1 new[x](DefenseState=NotProtected)
+				]
+			Rate=
+				0.5
 		)
